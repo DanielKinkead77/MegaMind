@@ -34,7 +34,7 @@ Architecture & Structure
   Study session and mood data are represented using dedicated model classes
   Asynchronous Firebase calls are handled to maintain a responsive UI
 
-  Screenshots
+Screenshots
 ![MegaMindSidebar](https://github.com/user-attachments/assets/b72ac0d5-c033-4057-83a6-12fe082e1a4e)
 ![MegaMindMenu](https://github.com/user-attachments/assets/9b4848f8-1544-4d21-8afd-9868df3ade86)
 ![MegaMindDashboard](https://github.com/user-attachments/assets/e9f60bd0-20e5-474e-a658-88471fb18ab8)
