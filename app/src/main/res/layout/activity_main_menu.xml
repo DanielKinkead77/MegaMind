@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#E8F5E9">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:text="Welcome!"
+        android:textSize="26sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_below="@id/txtWelcome"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnFeature1"
+            android:text="Report Issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnFeature2"
+            android:text="View Campus Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#388E3C"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnFeature3"
+            android:text="Your Submissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:backgroundTint="#1B5E20"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="Log Out"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+</RelativeLayout>

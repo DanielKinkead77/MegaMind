@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/homeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F6FF">
+
+        <View
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#1E88E5"
+            android:layout_alignParentTop="true" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Menu"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_menu"
+            app:tint="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:id="@+id/dashboardContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:text="Today's Study Time"
+                    android:textSize="16sp"
+                    android:textColor="#1E88E5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/todayMinutes"
+                    android:text="0 min"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:text="Study Streak"
+                    android:textSize="16sp"
+                    android:textColor="#1E88E5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/streakCount"
+                    android:text="0 Days"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:text="Average Mood"
+                    android:textSize="16sp"
+                    android:textColor="#1E88E5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/averageScore"
+                    android:text="0%"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/motivationQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You're doing great — keep going!"
+            android:textSize="18sp"
+            android:textColor="#1E88E5"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:layout_marginBottom="80dp" />
+
+        <Button
+            android:id="@+id/startSessionButton"
+            android:text="Start Study Session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/sidebar_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

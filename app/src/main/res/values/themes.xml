@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base App Theme -->
+    <style name="Theme.MegaMind" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1565C0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="android:colorBackground">#E3F2FD</item>
+
+        <item name="android:statusBarColor">#1565C0</item>
+        <item name="android:navigationBarColor">#1565C0</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="android:textColorPrimary">#0D47A1</item>
+    </style>
+
+</resources>

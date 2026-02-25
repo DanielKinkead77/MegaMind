@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navStudy"
+        android:title="Study"
+        android:icon="@drawable/ic_study" />
+
+    <item
+        android:id="@+id/navAnalytics"
+        android:title="Analytics"
+        android:icon="@drawable/ic_analytics" />
+
+    <item
+        android:id="@+id/navHistory"
+        android:title="Session History"
+        android:icon="@drawable/ic_history" />
+
+    <item
+        android:id="@+id/navInsights"
+        android:title="Insights"
+        android:icon="@drawable/ic_insights" />
+
+    <item
+        android:id="@+id/navAccount"
+        android:title="Account"
+        android:icon="@drawable/ic_account" />
+
+    <item
+        android:id="@+id/navLogout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_logout" />
+
+</menu>

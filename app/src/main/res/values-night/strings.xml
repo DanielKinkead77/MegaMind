@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MegaMind</string>
+    <string name="login">Log In</string>
+    <string name="email">Email Address</string>
+    <string-array name="mood_options">
+        <item>Select mood</item>
+        <item>😞 Very bad</item>
+        <item>😐 Okay</item>
+        <item>🙂 Good</item>
+        <item>😄 Great</item>
+        <item>🤩 Amazing</item>
+    </string-array>
+</resources>

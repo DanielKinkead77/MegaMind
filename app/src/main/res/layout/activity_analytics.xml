@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    android:padding="20dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginBottom="12dp"
+        app:tint="#1565C0" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/graphTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        android:textColor="#1565C0"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="18dp">
+
+        <Button
+            android:id="@+id/btnMood"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:text="Mood"
+            android:background="@drawable/pill_button_default"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnDuration"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Duration"
+            android:background="@drawable/pill_button_default"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Detail Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_marginBottom="18dp">
+
+        <TextView
+            android:id="@+id/detailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mood: --"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/detailTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: --"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <!-- Bar Chart -->
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"/>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:layout_margin="32dp"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:background="@drawable/input_box">
+
+
+        <TextView
+            android:id="@+id/titleMegaMind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MegaMind"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintText"
+            android:background="@drawable/input_box"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintText"
+            android:hint="Password"
+            android:background="@drawable/input_box"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an account"
+            android:textColor="#0D47A1"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/txtGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as Guest"
+            android:textColor="#1565C0"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

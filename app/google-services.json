@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "178946694696",
+    "firebase_url": "https://greencampus-fec1e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "greencampus-fec1e",
+    "storage_bucket": "greencampus-fec1e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178946694696:android:63dad9db1474c4ac65df1d",
+        "android_client_info": {
+          "package_name": "com.daniel.greencampus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxwczixkg2BXO0GvVoxUlcRWhnJrdtEEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
